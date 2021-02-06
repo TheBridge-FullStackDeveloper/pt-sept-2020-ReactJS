@@ -1,0 +1,26 @@
+.app {
+  border: 1px solid;
+}
+
+#header {
+  display: flex;
+}
+
+img {
+  border-radius: 25px;
+}
+
+.block {
+  border: 1px solid blue;
+  width: 50%;
+}
+
+#container {
+  border: 1px solid pink;
+  display: flex;
+  height: 500px;
+}
+
+.education {
+  border: 1px solid red;
+}
