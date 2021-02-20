@@ -1,0 +1,8 @@
+.button {
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  max-width: 150px;
+  margin: 0 auto;
+}
