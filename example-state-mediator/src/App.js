@@ -26,6 +26,7 @@ function App() {
 
       <div className="container">
         <Label text={text} />
+        <button on Click={() => handleClick(1) text="X" />
       </div>
     </section>
   )

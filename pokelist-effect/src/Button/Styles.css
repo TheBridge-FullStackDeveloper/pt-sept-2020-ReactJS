@@ -1,0 +1,10 @@
+button {
+    border: none;
+    background: no-repeat top left;
+    padding: 2px 8px;
+    text-align: right;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
