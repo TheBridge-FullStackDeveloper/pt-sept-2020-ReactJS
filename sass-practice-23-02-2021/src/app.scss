@@ -1,0 +1,8 @@
+@import './styles/common.scss';
+
+.app-container {
+  margin: 20px;
+  height: 150px;
+  @include center-flex;
+  @include commons;
+}
