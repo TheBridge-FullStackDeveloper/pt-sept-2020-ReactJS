@@ -13,12 +13,21 @@ const mockProps = {
   type2: null,
 };
 
+jest.mock('react-router-dom', () => ({
+  Link: (props) => (
+    <a data-testid={props['data-testid']} href={props.to}>
+      {props.children}
+    </a>
+  ),
+}));
+
 describe('PokeCard', () => {
-  it('component is visible', () => {
+  it('component is visible and has the correct href', () => {
     render(<PokeCard {...mockProps} />);
 
     const pokeCard = screen.queryByTestId('poke-card');
     expect(pokeCard).toBeVisible();
+    expect(pokeCard).toHaveAttribute('href', `/pokemon/${mockProps.id}`);
   });
 
   it('has the pokemon name and id', () => {

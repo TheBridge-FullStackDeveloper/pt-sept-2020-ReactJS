@@ -1,5 +1,6 @@
 import './App.css';
-import Header from './components/Header';
+// import Header from './components/Header';
+import PokemonList from './components/PokemonList';
 
 // Testearemos que tenemos un elemento que diga la palabra test
 // Testearemos que TODOS los elementos que contengan The Bridge son visibles
@@ -16,9 +17,9 @@ function App() {
         </a>
       </section>
 
-      <Header />
+      {/* <Header /> */}
 
-      
+      <PokemonList />
     </div>
   );
 }
